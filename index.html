@@ -9,25 +9,39 @@
 
 <body>
 
-    <section class="hero">
+    <div id="cover">
+        <h1>Akira & Nanai</h1>
+        <p>12.12.2026</p>
+        <button onclick="openInvitation()">Buka Undangan</button>
+    </div>
+
+
+    <audio id="bg-music" loop>
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <section class="hero fade-up">
         <h1>Akira & Nanai</h1>
         <p>Akan melangsungkan Pernikahan</p>
         <p class="date">12-12-2026</p>
     </section>
 
-    <section class="event">
+    <section class="event fade-up" style="animation-delay: 0.4s;">
         <h2>Detail Acara</h2>
         <p><strong>Akad:</strong> 09.00 WITA</p>
         <p><strong>Resepsi:</strong> 11.00 WITA</p>
         <p><strong>Tempat:</strong> Gedung Serbaguna</p>
     </section>
 
-    <section class="rsvp">
+    <section class="rsvp fade-up" style="animation-delay: 0.8s;">
         <h2>Konfirmasi Kehadiran</h2>
         <a href="https://wa.me/6285314302086" target="_blank"> Konfirmasi via Whatsapp
         </a>
     </section>
 
+    <!-- <section class="hero fade-up"></section>  -->
+    <!-- <section class="event fade-up" style="animation-delay:0.4s;"></section> -->
+    <!-- <section class="rsvp fade-up" style="animation-delay:0.8s;"></section> -->
     <script src="script.js"></script>
 </body>
 
