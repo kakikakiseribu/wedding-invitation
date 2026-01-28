@@ -15,13 +15,30 @@ section {
 }
 
 .hero {
-  background: linear-gradient(to bottom, #d4af37, #fff);
-  padding: 80px 20px;
+  min-height: 100vh;
+  background: 
+    linear-gradient(
+      rgba(0,0,0,0.4),
+      rgba(0,0,0,0.4)
+    ),
+    url("bg.jpg") center/cover no-repeat;
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
 .hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  /* margin-bottom: 10px; */
+}
+
+.hero p {
+  font-size: 18px;
 }
 
 .date {
@@ -62,23 +79,94 @@ section {
 }
 
 #cover {
-  position: fixed;
-  inset: 0;
-  background: linear-gradient(to bottom, #d4af37, #fff);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(to bottom, #d4af37, #fff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
 }
 
+/* #cover button { */
+    /* margin-top: 20px; */
+    /* padding: 14px 28px; */
+    /* border: none; */
+    /* border-radius:30px; */
+    /* backgrounds: #333; */
+    /* color: white; */
+    /* font-size: 16px; */
+    /* cursor: pointer; */
+/* } */
+
+
+/* <!-- HTML !-->
+<button class="button-74" role="button">Button 74</button>
+
+/* CSS */
 #cover button {
-  margin-top: 20px;
-  padding: 14px 28px;
-  border: none;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
   border-radius: 30px;
-  backgrounds: #333;
-  color: white;
-  font-size: 16px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+} 
+
+.gallery {
+  background: #faf7f2;
+}
+
+.gallery h2 {
+  margin-bottom: 30px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  padding: 0 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-grid img {
   cursor: pointer;
 }
