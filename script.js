@@ -16,3 +16,39 @@ setInterval(() => {
   document.querySelector(".date").innerText =
     `${days} Hari menuju acara pernikahan`;
 }, 1000);
+
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
+
+reveals.forEach(el => observer.observe(el));
+
+const music = document.getElementById("bg-music");
+const musicBtn = document.getElementById("music-btn");
+
+musicBtn.onclick = () => {
+  if (music.paused) {
+    music.play();
+    musicBtn.textContent = "⏸";
+  } else {
+    music.pause();
+    musicBtn.textContent = "▶";
+  }
+};
+
+const params = new URLSearchParams(window.location.search);
+const guest = params.get("to");
+
+if (guest) {
+  document.getElementById("guest-name").innerText =
+    `Kepada Yth: ${guest}`;
+}
