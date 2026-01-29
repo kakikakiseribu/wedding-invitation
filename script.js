@@ -45,10 +45,22 @@ musicBtn.onclick = () => {
   }
 };
 
+// const params = new URLSearchParams(window.location.search);
+// const guest = params.get("to");
+// 
+// if (guest) {
+//   document.getElementById("guest-name").innerText =
+//     `Kepada Yth: ${guest}`;
+// }
+
 const params = new URLSearchParams(window.location.search);
-const guest = params.get("to");
+let guest = params.get("to");
 
 if (guest) {
+  guest = decodeURIComponent(guest).replace(/\+/g, " ");
   document.getElementById("guest-name").innerText =
     `Kepada Yth: ${guest}`;
+} else {
+  document.getElementById("guest-name").innerText =
+    "Kepada Yth: Bapak/Ibu/Saudara/i";
 }
