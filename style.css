@@ -296,7 +296,7 @@ section {
 
 @media (max-width: 480px) {
   .button {
-    width: 60%;
+    width: 80%;
     justify-content: center;
   }
 
