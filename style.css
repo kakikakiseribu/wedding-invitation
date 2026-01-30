@@ -295,10 +295,10 @@ section {
 }
 
 @media (max-width: 480px) {
-  .button {
+  /* .button {
     width: 100%;
     justify-content: center;
-  }
+  } */
 
   .button-content {
     justify-content: center;
