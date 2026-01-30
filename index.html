@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head> -->
+
+<body>
+
+    <nav class="navbar">
+  <a href="#hero">Home</a>
+  <a href="#event">Acara</a>
+  <a href="#gallery">Galeri</a>
+</nav>
+
+    <div id="cover">
+        <h1 class="couple-name">Fauzi & Jakiah</h1>
+        <div class="ornament">
+  <svg width="120" height="20" viewBox="0 0 120 20">
+    <line x1="0" y1="10" x2="120" y2="10" stroke="white" stroke-width="1"/>
+    <circle cx="60" cy="10" r="3" fill="white"/>
+  </svg>
+</div>
+        <p>12.12.2026</p>
+        <button onclick="openInvitation()">Buka Undangan</button>
+    </div>
+
+
+    <audio id="bg-music" loop>
+        <button id="music-btn">⏸</button>
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <section class="hero fade-up" id="hero">
+        <p id="guest-name"></p>
+        <h1 class="couple-name">Fauzi & Jakiah</h1>
+        <p>Akan melangsungkan Pernikahan</p>
+        <p class="date">12-12-2026</p>
+    </section>
+
+    <section class="event fade-up" id="event" style="animation-delay: 0.4s;">
+        <h2>Detail Acara</h2>
+        <p><strong>Akad:</strong> 09.00 WITA</p>
+        <p><strong>Resepsi:</strong> 11.00 WITA</p>
+        <p><strong>Tempat:</strong> Gedung Serbaguna</p>
+    </section>
+
+    <section class="gallery" id="gallery">
+  <h2>Galeri Foto</h2>
+
+  <div class="gallery-columns">
+    <div class="gallery-col left">
+      <img src="gallery1.webp" loading="lazy">
+      <img src="gallery3.webp" loading="lazy">
+      <img src="gallery5.webp" loading="lazy">
+    </div>
+
+    <div class="gallery-col right">
+      <img src="gallery2.webp" loading="lazy">
+      <img src="gallery4.webp" loading="lazy">
+      <img src="gallery6.webp" loading="lazy">
+    </div>
+  </div>
+</section>
+
+    <!-- <section class="gallery reveal" id="gallery">
+  <h2>Galeri Foto</h2>
+  <div class="gallery-grid">
+    <img src="gallery1.jpg" loading="lazy" alt="Foto 1">
+    <img src="gallery2.jpg" loading="lazy" alt="Foto 2">
+    <img src="gallery3.jpg" loading="lazy" alt="Foto 3">
+    <img src="gallery4.jpg" loading="lazy" alt="Foto 4">
+  </div>
+</section> -->
+
+<section class="location reveal" id="location">
+  <h2>Lokasi Acara</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704.6556831977528!2d115.22091206951019!3d-2.462316937340682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de53f95c0f1bc21%3A0x3a430f944b2da674!2sKUA%20Sungai%20Pandan!5e0!3m2!1sid!2sid!4v1769571282486!5m2!1sid!2sid" 
+  width="600" 
+  height="450" 
+  style="border:0 border-radius : 12px;" 
+  allowfullscreen="" 
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<!-- <section class="rsvp reveal" id="rsvp"> -->
+  <!-- <h2>Konfirmasi Kehadiran</h2> -->
+  <!-- <iframe  -->
+    <!-- src="https://docs.google.com/forms/d/e/1FAIpQLSfKQiR6YXh12JRvSn25tFwqs7P1BgdJLAGVJKa4978xV9n3KA/viewform?embedded=true" -->
+    <!-- width="100%" -->
+    <!-- height="600" -->
+    <!-- frameborder="0" -->
+    <!-- loading="lazy"> -->
+  <!-- </iframe> -->
+<!-- </section> -->
+
+<section class="comments reveal" id="comments">
+<h2> Pesan/ucapan kepada kedua mempelai</h2>
+ <div class="commentbox"></div>
+</section>
+
+<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+<script>
+commentBox("5666934997647360-proj")
+</script>
+
+    <section class="rsvp fade-up" style="animation-delay: 0.8s;">
+        <h2>Konfirmasi Kehadiran</h2>
+        <a href="https://wa.me/6285314302086" target="_blank"> Konfirmasi via Whatsapp
+        </a>
+    </section>
+
+    <!-- <section class="hero fade-up"></section>  -->
+    <!-- <section class="event fade-up" style="animation-delay:0.4s;"></section> -->
+    <!-- <section class="rsvp fade-up" style="animation-delay:0.8s;"></section> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfKQiR6YXh12JRvSn25tFwqs7P1BgdJLAGVJKa4978xV9n3KA/viewform?embedded=true" width="640" height="553" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe> -->
+
