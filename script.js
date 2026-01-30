@@ -92,3 +92,4 @@ const galleryObserver = new IntersectionObserver(
 
 galleryImages.forEach(img => galleryObserver.observe(img));
 
+
