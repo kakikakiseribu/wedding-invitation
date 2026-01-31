@@ -55,6 +55,13 @@ section {
   font-weight: bold;
 }
 
+.guest-name {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  color: #555;
+}
+
 .event,
 .rsvp {
   backgroud: white;
@@ -306,6 +313,7 @@ section {
 
   .button__text {
     max-width: none;
+    font-size: 0.95rem;
   }
 }
 
